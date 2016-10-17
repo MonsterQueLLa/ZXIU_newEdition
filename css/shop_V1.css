@@ -1,0 +1,370 @@
+html, body, ul, li, div, p, dl, dd, dt, a, input, span, b, i, u, ol {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  font-family: "microsoft yahei";
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.msgbox {
+  width: 220px;
+  height: 95px;
+  background: white;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  text-align: center;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 14px;
+  z-index: 99999;
+}
+.msgbox div:nth-of-type(1) {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 1px solid gainsboro;
+}
+.msgbox div:nth-of-type(2) {
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  background: #E4366B;
+  color: white;
+  border-radius: 0px 0px 5px 5px;
+}
+
+button {
+  outline: none;
+}
+
+a {
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #454545;
+}
+
+ul, li {
+  list-style: none;
+}
+
+input {
+  background: none;
+}
+
+header {
+  z-index: 2;
+  position: fixed;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  background: #f53e76;
+  color: white;
+  height: 2.15rem;
+  width: 100%;
+  font-size: 20px;
+}
+header .h_left, header .h_right {
+  flex: 2;
+}
+header .h_center {
+  flex: 7;
+}
+header a {
+  color: white;
+  display: block;
+  width: 55px;
+  height: 25px;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+}
+header .h_right a {
+  border-radius: 5px;
+  background: url(../img/btn_bg.jpg) repeat-x left;
+}
+
+.container {
+  background: #f9f9f9;
+  position: absolute;
+  top: 2.15rem;
+  bottom: 2.25rem;
+  width: 100%;
+  overflow-y: auto;
+}
+.container .search {
+  width: 100%;
+  padding: 5px 0;
+  background: #52525a;
+}
+.container .search .search_box {
+  width: 90%;
+  margin: 0 auto;
+  background: white;
+  height: 25px;
+  border-radius: 5px 5px /10px 10px;
+  display: flex;
+  justify-content: center;
+  line-height: 25px;
+}
+.container .search .search_box .search_icon {
+  width: 30px;
+  height: 25px;
+  text-align: center;
+}
+.container .search .search_box input {
+  flex: 1;
+  height: 100%;
+}
+
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: #484850;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+}
+footer .f_item {
+  width: 25%;
+  height: 100%;
+  display: inline-flex;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  color: #fff;
+}
+footer .f_item span:nth-of-type(1) {
+  font-size: 22px;
+  font-weight: 400;
+}
+footer .f_item span:nth-of-type(2) {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "microsoft yahei";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  height: 45px;
+  width: 100%;
+  background-color: #e4366b;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4366b;
+}
+header img {
+  height: 28px;
+  width: 127px;
+}
+
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: #484850;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+}
+footer .cftItem {
+  width: 25%;
+  height: 100%;
+  display: inline-flex;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  color: #fff;
+}
+footer .cftItem span:nth-of-type(1) {
+  font-size: 22px;
+  font-weight: 400;
+}
+footer .cftItem span:nth-of-type(2) {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+section {
+  display: flex;
+  flex-flow: column nowrap;
+  height: auto;
+  position: absolute;
+  top: 45px;
+  bottom: 50px;
+  width: 100%;
+  overflow-y: auto;
+  background-color: #fefcfd;
+}
+section .search {
+  height: 45px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #52525a;
+}
+section .search div {
+  width: 272px;
+  height: 70%;
+  background: #fff;
+  border-radius: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+section .search div #mySearch {
+  background-color: #fff;
+  outline: none;
+  border: 0;
+  padding-left: 10px;
+  width: 90%;
+  height: 80%;
+  font-family: "microsoft yahei";
+}
+section .banner {
+  width: 100%;
+  height: 8.75rem;
+  background-color: #007AFF;
+}
+section .banner .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+section .banner .swiper-slide img {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+section .pageList {
+  flex-shrink: 10;
+  overflow-y: hidden;
+  width: 100%;
+  background-color: #fefcfd;
+}
+section .pageList .swiper-slide {
+  width: 100%;
+  height: 5.5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  background: url(../img/bk.jpg) repeat-x center bottom;
+}
+section .pageList .swiper-slide .img {
+  display: inline-block;
+  width: 30%;
+  height: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+section .pageList .swiper-slide .img a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+section .pageList .swiper-slide .img a img {
+  width: 90%;
+  height: 90%;
+}
+section .pageList .swiper-slide .desc {
+  padding-right: 3%;
+  width: 70%;
+  height: 100%;
+  display: inline-flex;
+  flex-flow: column;
+}
+section .pageList .swiper-slide .desc p {
+  margin-top: 4%;
+  height: 50%;
+  width: 100%;
+}
+section .pageList .swiper-slide .desc p a {
+  display: block;
+  text-decoration: none;
+  margin-top: 4%;
+  height: 50%;
+  width: 100%;
+  display: -webkit-box;
+  line-height: 1.2rem;
+  font-size: 0.6rem;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+section .pageList .swiper-slide .desc .price {
+  font-size: 0.5rem;
+  height: 50%;
+  width: 100%;
+  display: inline-flex;
+  flex-flow: row nowrap;
+}
+section .pageList .swiper-slide .desc .price .left {
+  padding-top: 5%;
+  width: 20%;
+  display: inline-flex;
+  flex-flow: column;
+}
+section .pageList .swiper-slide .desc .price .left span:nth-of-type(1) {
+  font-size: 0.75rem;
+  color: #f42a74;
+  font-weight: 600;
+}
+section .pageList .swiper-slide .desc .price .center {
+  padding-top: 5%;
+  margin-left: 3%;
+  width: 50%;
+  height: 100%;
+  text-decoration: line-through;
+  color: #bdbbbc;
+}
+section .pageList .swiper-slide .desc .price .right {
+  padding-top: 7%;
+  width: 30%;
+  height: 100%;
+  display: inline-flex;
+  justify-content: center;
+}
+section .pageList .swiper-slide .desc .price .right p {
+  display: inline-block;
+  width: 2.95rem;
+  height: 1.3rem;
+  background: #dd245d url(../img/buy.jpg) no-repeat center;
+  background-size: cover;
+  border-radius: 0.2rem;
+}

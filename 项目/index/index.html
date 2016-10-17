@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- SEO  -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- 苹果专用 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 简单移动端适配 -->
+   	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <!-- 图标 -->
+	<link rel="shortcut icon" href="">
+    
+    <title>模板</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <div class="showDiv"></div>
+	<button onclick="showData()">获得数据</button>
+    <script src="js/jquery-1.11.0.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    function showData(){
+    	var baseURL = "http://datainfo.duapp.com/shopdata/";
+    	var tmpURL = "getGoods.php";
+    	$.ajax({
+    		type:"get",
+    		url:baseURL+tmpURL,
+//  		data:"",
+    		dataType:"JSONP",
+//  		async:true,
+  			success: function(data){
+//  			console.log(typeof data);
+    			console.log(data);
+//  			$('.showDiv').html(JSON.parse(data));
+				for(var i = 0;i<data.length; i++){
+					console.log(data[i].goodsName);
+//					var Data = JSON.parse(data[i].goodsBenUrl);
+//					console.log(Data[0])
+				}
+    		},
+    		error: function(XMLHTTPRequest, textStatus, errorThrown){
+    			console.log("XMLHttpRequest :"+ XMLHTTPRequest);
+    			console.log("textStatus :"+textStatus);
+    			console.log("errorThrown :"+errorThrown);
+    		}
+    	});
+    }
+    	
+    </script>
+</body>
+
+</html>

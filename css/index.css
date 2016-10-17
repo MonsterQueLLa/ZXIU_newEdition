@@ -1,0 +1,139 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "microsoft yahei"; }
+
+.swiper-container {
+  height: 100%;
+  width: 100%; }
+  .swiper-container .swiper-wrapper {
+    height: 100%;
+    width: 100%; }
+    .swiper-container .swiper-wrapper .swiper-slide {
+      background-color: #f8f3f7;
+      text-align: center;
+      height: 100%;
+      width: 100%; }
+    .swiper-container .swiper-wrapper .slide1 .top {
+      height: 13.2%;
+      width: 100%; }
+    .swiper-container .swiper-wrapper .slide1 .center {
+      height: 22.89%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .swiper-container .swiper-wrapper .slide1 .center img {
+        height: 6.5rem;
+        width: 6.5rem; }
+    .swiper-container .swiper-wrapper .slide1 .font {
+      height: 13.2%;
+      width: 100%;
+      text-align: center;
+      line-height: 3.75rem;
+      font-size: 1.1rem; }
+    .swiper-container .swiper-wrapper .slide1 .foot {
+      height: 50.71%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end; }
+      .swiper-container .swiper-wrapper .slide1 .foot img {
+        height: 2.75rem;
+        width: 100%; }
+    .swiper-container .swiper-wrapper .slide2 .top {
+      height: 13.95rem;
+      width: 100%; }
+      .swiper-container .swiper-wrapper .slide2 .top img {
+        height: 13.95rem;
+        width: 100%; }
+    .swiper-container .swiper-wrapper .slide2 .font1 {
+      margin-top: 2rem;
+      height: 3rem;
+      width: 100%;
+      text-align: center;
+      font-size: 1.5rem;
+      line-height: 4rem;
+      color: #787878; }
+    .swiper-container .swiper-wrapper .slide2 .font2 {
+      height: 3rem;
+      width: 100%;
+      text-align: left;
+      font-size: 1.5rem;
+      padding: 1rem;
+      line-height: 4rem;
+      color: #787878; }
+    .swiper-container .swiper-wrapper .slide3 .top {
+      height: 11.5rem;
+      width: 100%;
+      margin-top: 1.25rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .swiper-container .swiper-wrapper .slide3 .top img {
+        height: 11.5rem;
+        width: 6.25rem; }
+    .swiper-container .swiper-wrapper .slide3 .foot {
+      margin-top: 1.75rem;
+      height: 5.6rem;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start; }
+      .swiper-container .swiper-wrapper .slide3 .foot img {
+        height: 5.6rem;
+        width: 10.4rem;
+        margin-left: 2rem; }
+    .swiper-container .swiper-wrapper .slide4 .font {
+      height: 5rem;
+      text-align: center;
+      line-height: 5rem;
+      width: 100%;
+      margin-top: 0.8rem;
+      font-size: 1.125rem;
+      color: #e43669; }
+    .swiper-container .swiper-wrapper .slide4 .top {
+      height: 14.25rem;
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      .swiper-container .swiper-wrapper .slide4 .top img {
+        height: 14.25rem;
+        width: 9.625rem; }
+    .swiper-container .swiper-wrapper .slide5 .top {
+      margin-top: 3.25rem;
+      height: 3.475rem;
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      .swiper-container .swiper-wrapper .slide5 .top img {
+        height: 3.475rem;
+        width: 1.8rem; }
+    .swiper-container .swiper-wrapper .slide5 .font {
+      text-align: center;
+      height: 5.75rem;
+      line-height: 5.75rem;
+      color: #e6356b;
+      font-size: 0.85rem; }
+    .swiper-container .swiper-wrapper .slide5 .foot {
+      margin-top: 5rem;
+      display: flex;
+      height: 2.4rem;
+      width: 100%;
+      justify-content: center;
+      align-items: center; }
+      .swiper-container .swiper-wrapper .slide5 .foot a {
+        display: block;
+        height: 2.4rem;
+        width: 7.25rem;
+        text-align: center;
+        line-height: 2.4rem;
+        color: #fff;
+        font-size: 1rem;
+        text-decoration: none;
+        background-color: #e45982;
+        border-radius: 5%; }
+
+/*# sourceMappingURL=index.css.map */

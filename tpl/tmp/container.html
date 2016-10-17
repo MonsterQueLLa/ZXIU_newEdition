@@ -1,0 +1,14 @@
+<ul>
+	<li>{{length}}</li>
+	{{if prdList.length>0}}
+		{{each prdList}}
+			<li>
+				<img src="{{$value.imgUrl}}" alt="">
+				<div>名称: {{$value.name}}</div>
+				<div>价格: {{$value.pric}}</div>
+				<div>数量: {{$value.num}}</div>
+			</li>
+		{{/each}}
+	{{/if}}
+</ul>
+

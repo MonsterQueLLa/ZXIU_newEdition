@@ -1,0 +1,44 @@
+<footer>
+		<div class="cftItem">
+			<span class="iconfont">&#xe644;</span>
+			<span>首页</span>
+		</div>
+		<div class="cftItem">
+			<span class="iconfont">&#xe692;</span>
+			<span>分类</span>
+		</div>
+		<div class="cftItem">
+			<span class="iconfont">&#xe61b;</span>
+			<span>购物车</span>
+		</div>
+		<div class="cftItem">
+			<span class="iconfont">&#xe646;</span>
+			<span>我的秀</span>
+		</div>
+		<div class="cftItem">
+			<span class="iconfont">&#xe61d;</span>
+			<span>更多</span>
+		</div>
+</footer>
+
+<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$('footer>div').eq(0).on('click tap',function(){
+	location.href = 'shop_V1.html';
+	});
+	$('footer>div').eq(1).on('click tap',function(){
+		location.href = 'classifyList.html';
+	});
+	$('footer>div').eq(2).on('click tap',function(){
+		location.href = 'cart.html';
+	});
+	$('footer>div').eq(3).on('click tap',function(){
+		location.href = 'myShow.html';
+	});
+
+//	$('footer').on('click','.cftItem',function(){
+//			console.log('zzz');
+//			$(this).css('border-top','#e43669 3px solid');
+//	})
+$('footer>div').eq(1).css('border-top','#e43669 3px solid');
+</script>

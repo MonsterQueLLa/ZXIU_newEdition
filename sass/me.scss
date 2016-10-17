@@ -1,0 +1,76 @@
+@import "public";
+.container{
+    text-align: center;
+    
+    article{
+        height: 100%;
+//       background: yellow;
+         input,.logout{  
+             height: 2rem;
+             line-height: 2rem;
+             width: 90%;
+             margin: 0.7rem 0;
+             border:1px solid gray;
+             border-radius: 5px;
+         }
+         #login,#reg,.logout{  
+             border: none;
+             font-size: 16px;
+             color: white;
+             background: #F53E76;
+         }
+         #f_reg{
+             display: none;
+         } 
+         .me{  
+             
+             width: 100%;
+             height: 100%;
+             display: flex;
+             flex-flow: column nowrap;
+             align-items: center;
+             .user_info{
+                 width: 100%;
+                 height: 9rem;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 .avatar{
+                     width: 30%;
+                     text-align: center;
+                     img{
+                         width: 80px;
+                         height: 80px;  
+                         border-radius: 5px;
+                     }
+                 }
+                .u_name{
+                    width: 50%;
+                }
+               
+             }
+             .user_menu{
+                 width: 90%;
+                 border-radius: 10px;
+                 background: white;
+                 border: 1px solid #EEEEEE;
+                 border-bottom: none;
+                 margin-bottom: 2rem;
+                 li{
+                     font-size: 15px;
+                     margin: 0 auto;
+                     height: 40px;
+                     line-height: 40px;
+                     border: 1px solid #EEEEEE;
+                 }
+             }
+           
+         }  
+    }
+   
+}
+
+
+footer .f_item:nth-of-type(4){
+    border-top: #e43669 3px solid !important;
+}

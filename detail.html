@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- SEO  -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- 苹果专用 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 简单移动端适配 -->
+   	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <!-- 图标 -->
+	
+    
+    <title>Detail</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/detail.css"/>
+</head>
+
+<body>
+	<header>
+		<a href="javascript:history.go(-1);" class="back"><img src="img/back.jpg"/></a>
+		<div class="center">商品介绍</div>
+		<div class="login"><a href="http://www.bootcss.com" ></a></div>
+	</header>
+   <div class="swiper-container pageCont">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide pageOne">
+            	<div class="top">距离结束时间:04天01时15分36秒</div>
+            	<div class="main">
+            		<div class="img">
+            			<img src="img/pic1.jpg"/>
+            		</div>
+            	</div>
+    
+        		<div class="desc">
+        			<p>¥259 灰色印花短袖T恤</p>
+        		</div>
+        		<div class="info">
+        			<div class="info-inner">
+        				<p class="left">市场价: <span class="old">¥439 </span><span class="count">4.8折</span></p>
+        				<p class="right">125人购买</p>
+        			</div>
+        			
+        		</div>
+            	
+            </div>
+            <div class="swiper-slide pageTwo">
+            	<img src="img/img1.jpg"/>
+            	<div class="last">
+            		而温柔而威尔饿哦日诶日而额外其瑞文去日ueriue而额外去惹人二恶趣味惹我
+            	</div>
+            </div>
+            <div class="swiper-slide pageThree">
+            	<div class="swiper-container pageInner">
+        			<div class="swiper-wrapper" id="detail_img">
+			            <div class="swiper-slide imgOne"><img src="img/pic2.jpg"/></div>
+			            <div class="swiper-slide imgTwo"><img src="img/pic3.jpg"/></div>
+			            <!--<div class="swiper-slide imgThree"><img src="img/pic4.jpg"/></div>
+			            <div class="swiper-slide imgFour"><img src="img/pic5.jpg"/></div>-->
+        			</div>
+        			<div class="swiper-pagination paginationCont"></div>
+    			</div>
+            </div>
+        </div>
+    </div>
+	<div id="contrast">
+		<a href="#" id="btn1" class="borderTop">介绍</a>
+		<a href="#" id="btn2">详情</a>
+		<a href="#" id="btn3">实拍</a>
+	</div>
+    <script src="js/jquery-1.11.0.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/swiper-3.3.1.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/detail.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	var mySwiper = new Swiper('.pageCont',{
+    		onSlideChangeEnd: function(swiper){
+//		      console.log(swiper.activeIndex);
+		      var index = swiper.activeIndex;
+		      console.log(index);
+		      $('#contrast a').eq(index).addClass('borderTop');
+			  $('#contrast a').eq(index).siblings().removeClass('borderTop');
+		    }
+		});
+		var swiperInner;
+		$('#btn1').click(function(){
+		mySwiper.slideTo(0, 1000, false);
+		})
+		$('#btn2').click(function(){
+		mySwiper.slideTo(1, 1000, false);
+		})
+		$('#btn3').click(function(){
+		mySwiper.slideTo(2, 1000, false);
+		})
+		
+		
+    </script>
+</body>
+
+</html>

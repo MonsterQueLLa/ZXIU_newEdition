@@ -1,0 +1,99 @@
+{
+	"index.html": {
+		"resources": [
+			"css/index.css",
+			"js/app.js",
+			"img/t5.jpg",
+			"img/t3.jpg",
+			"css/swiper.min.css",
+			"js/swiper.min.js",
+			"img/footer01.jpg",
+			"img/t2.jpg",
+			"img/t1.jpg",
+			"img/logo01.jpg",
+			"img/t4.jpg",
+			"shop_V1.html"
+		],
+		"refer": [
+			"shop_V1.html"
+		]
+	},
+	"shop_V1.html": {
+		"resources": [
+			"css/iconfont/iconfont.css",
+			"css/iconfont/iconfont.woff",
+			"img/buy.jpg",
+			"js/shop_V1.js",
+			"js/jquery-1.11.0.js",
+			"img/header.jpg",
+			"css/shop_V1.css",
+			"js/showMsg.js",
+			"js/jquery.cookie.js",
+			"img/bk.jpg",
+			"me.html",
+			"css/swiper.min.css",
+			"cart.html"
+		],
+		"refer": [
+			"me.html",
+			"cart.html"
+		]
+	},
+	"me.html": {
+		"resources": [
+			"js/zepto.cookie.min.js",
+			"css/me.css",
+			"js/zepto_1.1.3.js",
+			"img/btn_bg.jpg",
+			"js/touch.js",
+			"footer_a.html",
+			"js/me.js",
+			"cart.html",
+			"shop_V1.html",
+			"classifyList.html"
+		],
+		"refer": [
+			"cart.html",
+			"shop_V1.html",
+			"classifyList.html"
+		]
+	},
+	"cart.html": {
+		"resources": [
+			"me.html",
+			"css/cart.css",
+			"footer_a.html",
+			"js/cart.js"
+		],
+		"refer": [
+			"me.html"
+		]
+	},
+	"classify.html": {
+		"resources": [
+			"tpl/build/template.js",
+			"css/classify.css",
+			"img/cart.jpg",
+			"css/public1.css",
+			"js/classify.js",
+			"js/swiper-3.3.1.jquery.min.js",
+			"img/img4.jpg"
+		]
+	},
+	"classifyList.html": {
+		"resources": [
+			"js/iscroll-probe.js",
+			"classify.html",
+			"js/jquery-1.11.0.js",
+			"footer.html",
+			"js/iscroll.js",
+			"js/classifyList.js",
+			"css/classifyList.css",
+			"cart.html"
+		],
+		"refer": [
+			"classify.html",
+			"cart.html"
+		]
+	}
+}

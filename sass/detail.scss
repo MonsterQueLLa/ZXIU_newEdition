@@ -1,0 +1,219 @@
+    body,html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "microsoft yahei";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+-webkit-scrollbar{
+    display:none;
+}
+ 
+header{
+    height: 45px;
+    width: 100%;
+    background-color: #e4366b;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e4366b;
+    .back{
+        height: 100%;
+        width: 15%;
+         display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            height: 0.9rem;
+            width: 1.4rem;
+        }
+    }
+    .center{
+        width: 65%;
+        height: 100%;
+        color: #fff;
+        font-weight: 600;
+        font-size: 1rem;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .login{
+        width: 20%;
+        height: 100%;
+         display: inline-flex;
+        justify-content: flex-start;
+        align-items: center;
+        a{
+            width: 2.75rem;
+            height: 1.4rem;
+            background: url(../img/fenxiang.jpg) no-repeat center;
+            background-size: cover;
+            border-radius: 0.2rem;
+        }
+    }
+    
+}
+.pageCont,.siwper-slide{
+    position: absolute;
+    top: 45px;
+    bottom: 50px;
+    width: 100%;
+    overflow-y: auto;
+     background-color: #F7F7F7;
+}
+.pageOne{
+    background-color: #F7F7F7;
+    .top{
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 0.8rem;
+        background-color: #333333;
+    }
+    .main{
+        padding: 1.5rem;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        .img{
+             border:#acacac 1px solid;
+             height:auto;
+             width: 100%;
+             img{
+                 width: 100%;
+                display: block;
+             }
+        }
+    }
+    .desc{
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            width: 12.8rem;
+            height: 1.8rem;
+            background: url(../img/pro1.png);
+            background-size: cover;
+            line-height: 1.8rem;
+            font-size: 0.8rem;
+            color: #fff;
+            text-indent: 2rem;
+//          display: -webkit-box;
+//          word-break: break-all;
+//          -webkit-box-orient: vertical;
+//          -webkit-line-clamp: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+    .info{
+        width: 100%;
+        height: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .info-inner{
+            width: 80%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            color: #000;
+            font-size: 0.8rem;
+            .old{
+                text-decoration: line-through;
+            }
+            .count{
+               margin-left: 1rem;
+            }
+        }
+    }
+    
+}
+.pageTwo{
+    background-color: #F7F7F7;
+    img{
+        height: auto;
+        width: 100%;
+        display: block;
+    }
+    .last{
+        line-height: 1.2rem;
+        padding: 0.6rem;
+        font-size: 0.7rem;
+        color: #000;
+    }
+}
+.pageThree{
+    
+    .swiper-wrapper{
+        .swiper-slide{
+            background-color: #F7F7F7;
+            img{
+                width: 100%;
+                
+            }
+        }
+    }
+}
+
+#contrast{
+    height: 50px;
+    width:100%;
+    background-color: #484850;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#contrast a{
+    display: inline-block;
+    width: 33.3%;
+    height: 50px;
+    background-color: #59585e;
+    border-radius: 0;
+    border-top: #28282a 1px solid;
+    border-right: #28282a 1px solid;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.borderTop{
+   border-top: #e4366b 3px solid !important; 
+}
+
+ #btn3{
+     border-right: none;
+ }      
+.pageInner{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    overflow-y: auto;
+}

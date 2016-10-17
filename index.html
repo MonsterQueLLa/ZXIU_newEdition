@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- SEO  -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- 苹果专用 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 简单移动端适配 -->
+   	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+    
+    <title>index</title>
+   	<link rel="stylesheet" href="css/index.css" />
+   	<!--[if lt IE 9]>
+    <script src="../js/html5shiv.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+   
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide1">
+            	<div class="top"></div>
+            	<div class="center"><img src="img/logo01.jpg" alt="logo" /></div>
+            	<div class="font">秀出你的每一天</div>
+            	<div class="foot"><img src="img/footer01.jpg"/></div>
+            </div>
+            <div class="swiper-slide slide2">
+            	<div class="top"><img src="img/t1.jpg"/></div>
+            	<div class="font1">多联系,不孤单</div>
+            	<div class="font2">走秀与你相伴</div>
+            </div>
+            <div class="swiper-slide slide3">
+            	<div class="top"><img src="img/t2.jpg"/></div>
+            	<div class="foot"><img src="img/t3.jpg"/></div>
+            </div>
+            <div class="swiper-slide slide4">
+            	<div class="font">走秀网商品</div>
+            	<div class="top"><img src="img/t4.jpg"/></div>
+            </div>
+            <div class="swiper-slide slide5">
+            	<div class="top"><img src="img/t5.jpg" alt="#" /></div>
+            	<div class="font">NOW,开始走秀购物之行......</div>
+            	<div class="foot"><a href="shop_V1.html">开始体验</a></div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+   
+    <script src="js/app.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+  
+    <script>
+   var swiper = new Swiper('.swiper-container', {
+		onSlideChangeEnd: function(swiper) {
+			//console.log(swiper.activeIndex);
+			if(swiper.activeIndex == 4) {
+				console.log(this);
+				this.effect = "";
+			}
+	
+		},
+		pagination:'.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 30,
+        effect: 'fade',
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+ 
+    });
+    </script>
+
+</body>
+
+</html>
